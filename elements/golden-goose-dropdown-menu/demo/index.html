@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <title>golden-goose-dropdown-menu demo</title>
+
+    <script src="../../../../../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../../../../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../golden-goose-item/golden-goose-item.html">
+    <link rel="import" href="../../golden-goose-menu/golden-goose-menu.html">
+    <link rel="import" href="../golden-goose-dropdown-menu.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .vertical-section-container {
+        max-width: 500px;
+      }
+
+      .vertical-section {
+        text-align: center;
+        margin: 0 0 40px;
+      }
+
+      golden-goose-dropdown-menu {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body unresolved>
+    <div class="vertical-section-container centered">
+      <h4>This is a plain golden-goose-dropdown-menu</h4>
+      <div class="vertical-section">
+        <golden-goose-dropdown-menu label="Dinosaurs">
+          <golden-goose-menu class="dropdown-content">
+            <golden-goose-item>allosaurus</golden-goose-item>
+            <golden-goose-item>brontosaurus</golden-goose-item>
+            <golden-goose-item>carcharodontosaurus</golden-goose-item>
+            <golden-goose-item>diplodocus</golden-goose-item>
+          </golden-goose-menu>
+        </golden-goose-dropdown-menu>
+      </div>
+
+      <h4>You can pre-select a value using the <i>selected</i> attribute</h4>
+      <div class="vertical-section">
+        <golden-goose-dropdown-menu label="Dinosaurs">
+          <golden-goose-menu class="dropdown-content" selected="1">
+            <golden-goose-item>allosaurus</golden-goose-item>
+            <golden-goose-item>brontosaurus</golden-goose-item>
+            <golden-goose-item>carcharodontosaurus</golden-goose-item>
+            <golden-goose-item>diplodocus</golden-goose-item>
+          </golden-goose-menu>
+        </golden-goose-dropdown-menu>
+      </div>
+
+      <h4>You can change the direction in which the menu opens</h4>
+      <div class="vertical-section">
+          <golden-goose-dropdown-menu label="Upwards and to the left!" vertical-align="bottom" horizontal-align="left">
+            <golden-goose-menu class="dropdown-content">
+              <golden-goose-item>allosaurus</golden-goose-item>
+              <golden-goose-item>brontosaurus</golden-goose-item>
+              <golden-goose-item>carcharodontosaurus</golden-goose-item>
+              <golden-goose-item>diplodocus</golden-goose-item>
+            </golden-goose-menu>
+          </golden-goose-dropdown-menu>
+      </div>
+
+      <h4>A golden-goose-dropdown-menu can be disabled</h4>
+      <div class="vertical-section">
+        <golden-goose-dropdown-menu label="Disabled dinosaurs" disabled>
+          <golden-goose-menu class="dropdown-content">
+            <golden-goose-item>allosaurus</golden-goose-item>
+            <golden-goose-item>brontosaurus</golden-goose-item>
+            <golden-goose-item>carcharodontosaurus</golden-goose-item>
+            <golden-goose-item>diplodocus</golden-goose-item>
+          </golden-goose-menu>
+        </golden-goose-dropdown-menu>
+      </div>
+    </div>
+  </body>
+</html>
