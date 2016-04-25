@@ -12,7 +12,7 @@ golden-goose-card + golden-goose-card {
 }
 
 golden-goose-card {
-  max-width: 100%;
+  width: 100%;
 }
 
 form {
